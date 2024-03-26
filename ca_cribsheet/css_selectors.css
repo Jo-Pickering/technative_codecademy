@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-color: lightgreen;
+  font-family: "Helvetica";
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/*Header and Nav*/
+
+h1 {
+  text-align: center;
+  color: darkgreen;
+}
+
+/*I want the nav central...*/
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  display: inline-block;
+  clear: none;
+  padding: 10px;
+  width: 25%;
+}
+
+/*Body*/
+
+aside {
+  font-style: italic;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+.html,
+.css {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.css {
+  color: blueviolet;
+}
+
+.html {
+  color: magenta;
+}
+
+/*Tables*/
+
+table,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: left;
+  padding: 5px;
+}
+
+table .header {
+  background-color: darkseagreen;
+}

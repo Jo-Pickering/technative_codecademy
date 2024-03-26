@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+    <link href="css_selectors.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Learn CSS Selectors</h1>
+      <nav>
+        <ul>
+          <li>Available Selectors</li>
+          <li>Chaining Selectors</li>
+          <li>Descendant Combinations</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro">
+        <p>
+          As well as HTML elements (e.g. <span class="html">p</span>,
+          <span class="html">h1</span>, etc) you can use various selectors to
+          style your HTML. You should always style by broadest specificity
+          first, to allow for more granular styles as you go down (e.g. by
+          element first, then class, with id used very sparingly as it’s single
+          instance).
+        </p>
+        <aside>
+          Find out about the different selectors, their specificities and how to
+          chain them below!
+        </aside>
+      </section>
+      <section id="selector_types">
+        <h2>Available Selectors</h2>
+        <p>
+          The table below shows the different ways of selecting HTMl to style.
+          They are listed from most general to most specific.
+        </p>
+        <table>
+          <thead>
+            <th scope="col">
+              <tr>
+                <td class="header">Selector</td>
+                <td class="header">Role</td>
+                <td class="header">Explanation</td>
+              </tr>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><span class="css">*</span></td>
+              <td>Universal selector</td>
+              <td>
+                Targets all HTML elements (or can be set to target children of a
+                specific parent).
+              </td>
+            </tr>
+            <tr>
+              <td><span class="css">.class</span></td>
+              <td>Selects a HTML class to style.</td>
+              <td>
+                This can help distinguish between different instances of
+                elements (e.g. <span class="html">< p class = ”brand”></span> vs
+                <span class="html">< p class="general”></span>). Class selectors
+                override element selectors. CSS <span class="css">.class</span>
+                values can be written separately but can be combined in HTML
+                (see HTML class cribsheet) to apply both styles.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="html">[attribute]</span></td>
+              <td>
+                selects all elements with a specific attribute (e.g. href)
+              </td>
+              <td>
+                It could style all links without need for a new class instance.
+                <br />You can also separate out types of attributes depending on
+                their value using element<span class="html"
+                  >[attribute*=value]</span
+                >
+                (e.g. <span class="css">img[src*=’winter’]{}</span> would only
+                format images with winter in their source links.)
+              </td>
+            </tr>
+            <tr>
+              <td>#id</td>
+              <td>to style a unique block of HTML.</td>
+              <td>
+                Cannot have stacked values in HTML as it is unique, so all
+                corresponding style code needs to be in the CSS declaration
+                block and won’t be reused elsewhere on the page. Can be used in
+                combination with a class for both sets of properties but will
+                override element and class selectors.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="chaining">
+        <h2>Chaining Selectors</h2>
+        <p>
+          It is possible to combine selectors in order to add specificity when
+          style elements are valid for mutliple parts of HTML.
+        </p>
+        <table>
+          <thead>
+            <th scope="col">
+              <tr>
+                <td class="header">Chain</td>
+                <td class="header">Role</td>
+                <td class="header">Explanation</td>
+              </tr>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><span class="css">Element.class</span></td>
+              <td>will style all elements with the listed class.</td>
+              <td>
+                It will not style the same elements with different or no class,
+                nor will it style different elements with the same class.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="css">h1,<br />.class</span>
+              </td>
+              <td>
+                will apply styling to BOTH selectors
+                <span class="css">h1</span> and
+                <span class="css">.class </span>with the same piece of code.
+              </td>
+              <td>No comments.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="descendant">
+        <h2>Descendant Combination</h2>
+        <p>
+          <span class="css">.class child-element</span> = will style all child
+          elements to that class (e.g. list items within a list).<br /><br />Can
+          also be done with element child-element (<span class="html"
+            >ul li</span
+          >) and any other element nested within another (e.g.
+          <span class="html">h5</span> with nested <span class="html">p</span>).
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
