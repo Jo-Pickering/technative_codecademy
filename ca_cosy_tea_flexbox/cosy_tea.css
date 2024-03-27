@@ -1,0 +1,164 @@
+/*CSS light reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Root settings*/
+html {
+  font-family: "Helvetica";
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*Header and Nav*/
+header {
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 10;
+}
+
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+header li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+header a {
+  color: seashell;
+}
+
+/*Main Flexbox*/
+main {
+  position: relative;
+  top: 71px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+/*Mission Flexbox <Main*/
+#mission {
+  display: flex;
+  height: 700px;
+  width: 1200px;
+  line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./resources/img-mission-background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+#mission h2,
+#mission h4 {
+  width: 100%;
+  background-color: black;
+}
+
+/*Featured Flexbox <Main*/
+#featured {
+  position: relative;
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/*Titles Flexbox <Featured <Main*/
+.sectiontitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*Figures Flexbox <Featured <Main*/
+figures {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/*Figure Flexbox <Figures <Featured <Main*/
+figure {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+figure img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+/*Locations Flexbox <Main */
+#locations {
+  display: flex;
+  height: 500px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./resources/img-locations-background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+/*h2 Flexbox <Locations <Main*/
+#locations h2 {
+  display: flex;
+}
+
+/*Address_Book Flexbox <Locations <Main*/
+.address_book {
+  display: inline-flex;
+}
+
+.address {
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  margin: 20px;
+  line-height: 3;
+}
+
+/*Contact Flexbox <Main*/
+#contact {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Footer*/
+footer {
+  position: relative;
+  top: 76px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
