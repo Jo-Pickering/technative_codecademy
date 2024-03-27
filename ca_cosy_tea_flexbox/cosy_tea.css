@@ -159,6 +159,16 @@ footer {
   position: relative;
   top: 76px;
   display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  display: flex;
   justify-content: flex-start;
   margin-left: 20px;
+}
+
+.myinfo {
+  display: flex;
+  justify-content: center;
 }
