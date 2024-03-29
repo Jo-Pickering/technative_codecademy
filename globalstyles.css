@@ -3,3 +3,13 @@
   font-size: small;
   text-align: center;
 }
+
+.week {
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+}
+
+.one {
+  background-color: lightseagreen;
+}
