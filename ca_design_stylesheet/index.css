@@ -228,7 +228,7 @@ figcaption {
   font-weight: bold;
 }
 
-/*Stuff for this particular project*/
+/*Style Overrides*/
 
 .bold {
   font-weight: bold;
@@ -250,13 +250,6 @@ figcaption {
   font-family: "Kode Mono";
 }
 
-.colour_block {
-  height: 100px;
-  width: 200px;
-  border-radius: 10px;
-  padding-top: 15px;
-}
-
 .mauve {
   background-color: #702283;
 }
@@ -273,6 +266,8 @@ figcaption {
   background-color: #fdb44b;
 }
 
+/*Stuff for this particular project*/
+
 .footer {
   font-family: "Handlee";
   font-style: italic;
@@ -284,4 +279,11 @@ figcaption {
 li {
   list-style: none;
   padding-bottom: 0.5rem;
+}
+
+.colour_block {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  padding-top: 15px;
 }
