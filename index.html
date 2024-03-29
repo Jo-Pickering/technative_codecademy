@@ -3,37 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Stylesheet</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="./ca_design_stylesheet/index.css"
-      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic+Coding:wght@400;700&family=Shadows+Into+Light+Two&display=swap"
       rel="stylesheet"
     />
-    <title>TechNative Codecademy Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>TechNative/Codecademy Projects</h1>
+      <h1>Jo Pickering</h1>
+      <nav>
+        <ul>
+          <li><a href="X" class="internal_link">About</a></li>
+          <li><a href="Y" class="internal_link">From Stage to Screen</a></li>
+          <li><a href="Z" class="internal_link here">Projects</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <div class="sidebar">
+      <p>Because I wanted to test it!</p>
+    </div>
+
     <main>
+      <h2>TechNative/ Codecademy Projects</h2>
       <p>
         Have a look at all the projects from my Full Stack Bootcamp. These range
         from absolute beginner projects to more complicated ones!
       </p>
-      <a class="button" href="./ca_dasmotos/damotos_art.html"
-        >Dasmoto's Arts and Crafts</a
-      >
-      <br />
-      <a class="button" href="./ca_cribsheet/css_selectors.html"
-        >CSS Selectors Crib Sheet</a
-      >
-      <br />
-      <a class="button" href="./ca_cosy_tea_flexbox/cosy_tea_index.html"
-        >Cozy Tea: Flexbox Project</a
-      >
-      <br />
-      <a class="button" href="./ca_design_stylesheet/website_stylesheet.html"
-        >Website Stylesheet</a
-      >
+
+      <section id="week1">
+        <h3>Week 1</h3>
+        <div class="inline_blocks">
+          <a class="button" href="./ca_dasmotos/damotos_art.html"
+            >Dasmoto's Arts and Crafts</a
+          >
+          <a class="button" href="./ca_cribsheet/css_selectors.html"
+            >CSS Selectors Crib Sheet</a
+          >
+        </div>
+      </section>
+
+      <br /><br />
+
+      <section id="week2">
+        <h3>Week 2</h3>
+        <div class="inline_blocks">
+          <a class="button" href="./ca_cosy_tea_flexbox/cosy_tea_index.html"
+            >Cozy Tea: Flexbox Project</a
+          >
+          <a
+            class="button"
+            href="./ca_design_stylesheet/website_stylesheet.html"
+            >Website Stylesheet</a
+          >
+        </div>
+      </section>
     </main>
   </body>
 </html>
