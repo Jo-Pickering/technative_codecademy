@@ -17,7 +17,7 @@ body {
   display: grid;
   min-height: 0%;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 15% auto;
   gap: 15px;
   background-color: #70228350;
 }
@@ -46,13 +46,13 @@ nav li {
 
 main {
   margin-right: 1rem;
-  overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
 .sidebar {
-  height: 95%;
+  min-width: fit-content;
+  height: 90%;
   background-color: #76b39d;
   border-radius: 20px;
   grid-column: 1 / 2;
@@ -68,6 +68,7 @@ footer {
   font-size: smaller;
   color: white;
   background-color: #702283;
+  padding: 5px;
 }
 
 /*Main Element Flexboxes*/
