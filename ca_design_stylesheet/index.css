@@ -1,0 +1,287 @@
+/*Website Layout and Grid Conventions*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  min-height: 0%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 15% 1fr;
+  gap: 15px;
+  background-color: #70228350;
+}
+
+header,
+footer {
+  grid-column: 1 / -1;
+}
+
+header {
+  background-color: #962071;
+  display: grid;
+  grid-template-rows: auto, auto;
+}
+
+nav ul {
+  font-family: "Handlee";
+  font-size: 1.5rem;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+nav li {
+  list-style: none;
+}
+
+main {
+  margin-right: 1rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  height: 95%;
+  background-color: #76b39d;
+  border-radius: 20px;
+  grid-column: 1 / 2;
+  margin-left: 1rem;
+  margin-top: 3rem;
+  text-align: centre;
+  padding: 20px;
+}
+
+footer {
+  font-family: "Handlee";
+  font-style: italic;
+  font-size: smaller;
+  color: white;
+  background-color: #702283;
+}
+
+/*Main Element Flexboxes*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 2px #702283 solid;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.inline_blocks {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.group {
+  flex-basis: 50%;
+  padding-bottom: 2rem;
+}
+
+/*Website Text Styling Conventions*/
+
+h1 {
+  font-family: "Handlee";
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #962071;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+aside {
+  font-family: "Shadows into Light Two";
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #962071;
+  background-color: #fdb44b;
+  border-radius: 20px;
+}
+
+figcaption {
+  font-family: "Kode Mono";
+  font-size: 1rem;
+}
+
+.code {
+  font-family: "Kode Mono";
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  background-color: #76b39d60;
+}
+
+.here {
+  font-weight: bolder;
+}
+
+/*Website User Navigation Conventions (links and buttons)*/
+
+.internal_link {
+  color: black;
+}
+
+.internal_link:visited {
+  color: #76b39d;
+}
+
+.internal_link:hover {
+  background-color: #fdb44b;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.internal_link:active {
+  color: #702283;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.external_link {
+  color: blue;
+}
+
+.external_link:visited {
+  color: purple;
+}
+
+.external_link:hover {
+  border: 2px solid blue;
+}
+
+.external_link:active {
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+}
+
+.button {
+  background-color: #fdb44b;
+  color: black;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.button:visited {
+  background-color: #76b39d;
+}
+
+.button:hover {
+  background-color: white;
+  border: 2px solid #fdb44b;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #702283;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Stuff for this particular project*/
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.handlee {
+  font-family: "Handlee";
+}
+
+.shadows {
+  font-family: "Shadows into Light Two";
+}
+
+.kode {
+  font-family: "Kode Mono";
+}
+
+.colour_block {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+
+.mauve {
+  background-color: #702283;
+}
+
+.purple {
+  background-color: #962071;
+}
+
+.green {
+  background-color: #76b39d;
+}
+
+.yellow {
+  background-color: #fdb44b;
+}
+
+.footer {
+  font-family: "Handlee";
+  font-style: italic;
+  font-size: smaller;
+  color: white;
+  background-color: #702283;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 0.5rem;
+}

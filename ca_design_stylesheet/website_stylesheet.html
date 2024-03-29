@@ -4,31 +4,222 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Stylesheet</title>
-    <link href="../globalstyles.css" type="text/css" rel="stylesheet" />
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic+Coding:wght@400;700&family=Shadows+Into+Light+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav></nav>
-      <h1>Website Stylesheet</h1>
+      <h1>Jo Pickering</h1>
+      <nav>
+        <ul>
+          <li><a href="X" class="internal_link">About</a></li>
+          <li><a href="Y" class="internal_link">From Stage to Screen</a></li>
+          <li><a href="Z" class="internal_link here">Projects</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="colours">
-      /*Insert colour palette. Each colour should be a box and include it's
-      colour name and hsla info. Could include how colours to be used.*/
-    </section>
-    <section id="fonts">
-      /*Include font families to be used on the site. Include example sentences
-      for each font inc. bold and italic.*/
-    </section>
-    <section id="mainstyles">
-      /*How you're going to style different elements including weight, size and
-      family. E.g. TNR for headers and Helvetica for body.*/
-    </section>
-    <section id="layout">
-      /*Header, nav bar, footer etc? Also buttons and responsive designs!*/
-    </section>
+    <div class="sidebar">
+      <p>Because I wanted to test it!</p>
+    </div>
+
+    <main>
+      <h2>Website Stylesheet</h2>
+
+      <br />
+      <br />
+
+      <section id="colours">
+        <h3>Colours</h3>
+        <!--Insert colour palette. Each colour should be a box and include it's
+      colour name and hsla info. Could include how colours to be used.-->
+        <div class="inline_blocks">
+          <div class="colour_block mauve">
+            <p class="bold">Mauve</p>
+            <p>#702283</p>
+          </div>
+          <div class="colour_block purple">
+            <p class="bold">Purple</p>
+            <p>#962071</p>
+          </div>
+          <div class="colour_block green">
+            <p class="bold">Pale Green</p>
+            <p>#76b39d</p>
+          </div>
+          <div class="colour_block yellow">
+            <p class="bold">Yellow</p>
+            <p>#fdb44b</p>
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <br />
+
+      <section id="fonts">
+        <h3>Font Families</h3>
+        <!--Include font families to be used on the site. Include example sentences
+      for each font inc. bold and italic.-->
+        <div class="inline_blocks">
+          <div class="group">
+            <h4>Montserrat</h4>
+            <p>An all round font with lots of variable options.</p>
+            <p class="italic">
+              An all round font with lots of variable options.
+            </p>
+            <p class="bold">An all round font with lots of variable options.</p>
+          </div>
+          <div class="group kode">
+            <h4>Kode Mono</h4>
+            <p>It's also good to have a monospace font on the roster.</p>
+            <p class="bold">
+              It's also good to have a monospace font on the roster.
+            </p>
+          </div>
+          <div class="group handlee">
+            <h4>Handlee</h4>
+            <p>For when a bit more character is needed!</p>
+          </div>
+          <div class="group shadows">
+            <h4>Shadows into Light Two</h4>
+            <p>Another character font for some variety.</p>
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <br />
+
+      <section id="mainstyles">
+        <h3>Text Styles</h3>
+        <!--How you're going to style different elements including weight, size and
+      family. E.g. TNR for headers and Helvetica for body.-->
+        <h1>Heading 1 - Website Title</h1>
+        <ul>
+          <li>Font-family: Handlee</li>
+          <li>Font-size: 4rem</li>
+          <li>Font-weight: normal</li>
+        </ul>
+        <h2>Heading 2 - Page Title</h2>
+        <ul>
+          <li>Font-family: Montserrat</li>
+          <li>Font-size: 3.5rem</li>
+          <li>Font-weight: bolder</li>
+        </ul>
+        <h3>Heading 3 - Content Header</h3>
+        <ul>
+          <li>Font-family: Montserrat</li>
+          <li>Font-size: 2.5rem</li>
+          <li>Font-weight: bold</li>
+        </ul>
+        <br />
+        <div class="inline_blocks">
+          <div class="group">
+            <h4>Heading 4 - Content Sub-section</h4>
+            <ul>
+              <li>Font-family: Montserrat</li>
+              <li>Font-size: 2rem</li>
+              <li>Font-weight: bold</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h5>Heading 5 - Content Sub-sub-section</h5>
+            <ul>
+              <li>Font-family: Montserrat</li>
+              <li>Font-size: 1.5rem</li>
+              <li>Font-weight: bold</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h6>Heading 6 - Content Sub-sub-section</h6>
+            <ul>
+              <li>Font-family: Montserrat</li>
+              <li>Font-size: 1rem</li>
+              <li>Font-weight: bold</li>
+            </ul>
+          </div>
+          <div class="group">
+            <p>Paragraph</p>
+            <ul>
+              <li>Font-family: Montserrat</li>
+              <li>Font-size: 16px</li>
+              <li>Font-weight: normal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="inline_blocks">
+          <div class="group">
+            <aside>Aside</aside>
+            <ul>
+              <li>Font-family: Shadows into Light Two</li>
+              <li>Font-size: 3rem</li>
+              <li>Font-style: italics</li>
+            </ul>
+          </div>
+          <div class="group">
+            <p><span class="code">Code</span></p>
+            <ul>
+              <li>Font-family: Kode Mono lowercase</li>
+              <li>Font-size: 1.25</li>
+              <li>Font-weight: normal</li>
+            </ul>
+          </div>
+          <div class="group">
+            <figcaption>Fig Captions</figcaption>
+            <br />
+            <ul>
+              <li>Font-family: Kode Mono</li>
+              <li>Font-size: 1rem</li>
+              <li>Font-weight: italic</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h5 class="handlee">Navigation Bar</h5>
+            <br />
+            <ul>
+              <li>Font-family: Handlee</li>
+              <li>Font-size: 1.5rem</li>
+              <li>Font-weight: normal</li>
+            </ul>
+          </div>
+          <div class="group">
+            <p class="footer">Footer</p>
+            <ul>
+              <li>Font-family: Shadows into Light Two</li>
+              <li>Font-size: smaller</li>
+              <li>Font-weight: italic</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <br />
+
+      <section id="layout">
+        <!--Header, nav bar, footer etc? Also buttons and responsive designs!-->
+        <h3>Additional Design Features</h3>
+        <div class="inline_blocks">
+          <a class="internal_link" href="#top">Internal Links</a>
+          <a class="external_link" href="a">External Links</a>
+          <a class="button" href="b">Buttons</a>
+        </div>
+      </section>
+    </main>
   </body>
+
   <footer>
-    <p class="myinfo">Made for a Codecademy Project week 2.</p>
+    <p class="footer">Made for a Codecademy Project week 2.</p>
   </footer>
 </html>
