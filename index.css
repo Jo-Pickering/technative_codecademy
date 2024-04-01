@@ -232,9 +232,6 @@ figcaption {
 /*Responsive Site Please*/
 @media only screen and (max-width: 768px) {
   h2 {
-    font-size: 1rem;
-  }
-  div.sidebar {
-    display: none;
+    font-size: 1.5rem;
   }
 }
