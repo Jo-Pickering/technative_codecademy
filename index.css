@@ -231,7 +231,8 @@ figcaption {
 
 /*Responsive Site Please*/
 @media only screens and (max-width: 768px) {
-  h2 {
-    font-size: 2rem;
+  body {
+    grid-template-rows: auto 5% 1fr auto;
+    grid-template-columns: 1fr;
   }
 }
