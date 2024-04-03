@@ -1,0 +1,161 @@
+/* global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightblue;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* text */
+h2 {
+  font-weight: bold;
+}
+
+p {
+  line-height: 2rem;
+}
+
+/* media */
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 10rem;
+  padding: 1rem 0;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  position: fixed;
+  background-image: url("./resources/stardewbackground.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+/* nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5rem;
+}
+
+.int_link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.int_link:hover {
+  background-color: grey;
+}
+
+/* main */
+main {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 760px) {
+  main {
+    top: 7rem;
+  }
+}
+
+.block {
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .block {
+    margin: 1rem;
+    flex: 1;
+  }
+}
+
+.product {
+  background-color: grey;
+}
+
+.info {
+  background-color: darkslateblue;
+  opacity: 75%;
+}
+
+/*Mission Section*/
+
+#mission {
+  margin: 2rem;
+  color: white;
+  border-radius: 5px;
+}
+
+/*Products Section*/
+
+#products {
+  background-color: bisque;
+}
+
+/* rows */
+.row_container {
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .row_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* columns */
+@media only screen and (min-width: 1000px) {
+  .col_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* footer */
+footer {
+  position: relative;
+  top: 10rem;
+  width: 100%;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: darkcyan;
+}
+
+@media only screen and (min-width: 1000px) {
+  footer {
+    top: 7rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
