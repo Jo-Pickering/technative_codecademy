@@ -1,0 +1,105 @@
+html {
+  background: #efefef;
+  height: 100%;
+}
+
+body {
+  font-family: Georgia, sans-serif;
+  line-height: 1.5;
+  max-width: 900px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.planet {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  margin: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.planet-name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.planet-circumference,
+.planet-distance {
+  font-style: italic;
+}
+
+.planet-Mercury {
+  background: pink;
+  height: 150px;
+  width: 150px;
+}
+
+.planet-Venus {
+  background: lightskyblue;
+  height: 175px;
+  width: 175px;
+}
+
+.planet-Earth {
+  background: green;
+  height: 200px;
+  width: 200px;
+}
+
+.planet-Mars {
+  background: red;
+  height: 225px;
+  width: 225px;
+}
+
+.planet-Jupiter {
+  background: orange;
+  height: 300px;
+  width: 300px;
+}
+
+.planet-Saturn {
+  background: coral;
+  height: 275px;
+  width: 275px;
+}
+
+.planet-Uranus {
+  background: lightsteelblue;
+  height: 200px;
+  width: 200px;
+}
+
+.planet-Neptune {
+  background: mediumslateblue;
+  height: 175px;
+  width: 175px;
+}
+
+.search {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+.currently-selected-button {
+  background: black;
+  color: orange;
+}
