@@ -11,3 +11,8 @@ Folders prefixed with:
 ## How to Use
 Feel free to browse through my code to see how my skills and understanding has developed.
 Where interfaces exist, these have been deployed to GitHub Pages and are linked together by the index file.
+
+## Topics Covered
++ html
++ css
++ javascript
