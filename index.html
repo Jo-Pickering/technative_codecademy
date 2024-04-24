@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechNative/ Codecademy Projects</title>
+    <link href="./index-specific.css" type="text/css" rel="stylesheet" />
     <link href="./index.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +22,7 @@
   <body>
     <header>
       <h1>Jo Pickering</h1>
-      <nav>
+      <nav class="site-nav">
         <ul>
           <li><a href="X" class="internal_link">About</a></li>
           <li>
@@ -42,111 +43,328 @@
       </nav>
     </header>
 
-    <div class="page">
-      <div class="sidebar">
-        <p><strong>Collaborators</strong></p>
-        <br />
-        <div class="collab">
-          <a href="https://github.com/ChloeSAPage">Chloe Page</a>
-        </div>
-        <br />
-        <div class="collab">
-          <a href="https://github.com/BlueElyas">Elyas Faiq</a>
-        </div>
-        <div class="collab">
-          <a href="https://github.com/HelderBalbino">Helder Balbino</a>
-        </div>
-      </div>
-
-      <main>
-        <h2>TechNative/ Codecademy Projects</h2>
-        <p>
-          Have a look at all the projects from my Full Stack Bootcamp. These
-          range from absolute beginner projects to more complicated ones!
+    <main>
+      <section class="page-introduction">
+        <h2 class="page-title">TechNative/ Codecademy Projects</h2>
+        <p class="intro">
+          Have a look at a selection of the learning projects from my Full Stack
+          Bootcamp. These range from absolute beginner projects in week one,
+          through more complicated projects with a few group projects thrown in
+          for good measure.
         </p>
+        <br />
+        <p class="intro">
+          I hope they give you an idea of how far I've come during the bootcamp.
+          Remember, I had very little experience before this!
+        </p>
+        <br />
+        <p class="intro">
+          If you'd like to take a look at some of my course peers and coding
+          collaborators, I've linked to their GitHub profiles at the bottom of
+          the page.
+        </p>
+      </section>
 
-        <section id="week1">
-          <h3>Week 1</h3>
+      <nav class="page-navigation">
+        <p><strong>Jump to week:</strong></p>
+        <ul>
+          <li>
+            <a class="internal_link" href="#week1">Week 1</a>
+          </li>
+          <li>
+            <a class="internal_link" href="#week2">Week 2</a>
+          </li>
+          <li>
+            <a class="internal_link" href="#week3">Week 3</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week4">Week 4</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week5">Week 5</a>
+          </li>
+          <!-----------------------------------------------------------------------
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 6</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 7</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 8</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 9</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 10</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 11</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 12</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 13</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 14</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 15</a>
+          </li>
+          <li class="nobull">
+            <a class="internal_link" href="week2">Week 16</a>
+          </li>
+          -->
+        </ul>
+      </nav>
+      <br />
+      <br />
+      <section class="posts">
+        <article class="container" id="week1">
+          <h3 class="week-title">Week 1</h3>
           <div class="inline_blocks">
-            <a class="button" href="./ca_dasmotos/damotos_art.html"
-              >Dasmoto's Arts and Crafts</a
-            >
-            <a class="button" href="./ca_cribsheet/css_selectors.html"
-              >CSS Selectors Crib Sheet</a
-            >
+            <div class="project">
+              <a class="button" href="./ca_dasmotos/damotos_art.html"
+                >Dasmoto's Arts and Crafts</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  One of the first basic sites I made on the Codecademy course
+                  focusing on basic CSS elements. Click the name to view the
+                  project.
+                </p>
+              </details>
+            </div>
+            <br /><br />
+            <div class="project">
+              <a class="button" href="./ca_cribsheet/css_selectors.html"
+                >CSS Selectors Crib Sheet</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  Practising using HTML tables and basic CSS elements. Click the
+                  name to view the project.
+                </p>
+              </details>
+            </div>
           </div>
-        </section>
+        </article>
 
         <br /><br />
 
-        <section id="week2">
-          <h3>Week 2</h3>
+        <article class="container" id="week2">
+          <h3 class="week-title">Week 2</h3>
           <div class="inline_blocks">
-            <a class="button" href="./ca_cosy_tea_flexbox/cosy_tea_index.html"
-              >Cozy Tea: Flexbox Project</a
-            >
-            <a
-              class="button"
-              href="./ca_design_stylesheet/website_stylesheet.html"
-              >Website Stylesheet</a
-            >
-            <a class="button" href="./ca_fotomatic_debug/index.html"
-              >Fotomatic Debug (in progress)</a
-            >
-            <a class="button" href="./ca_company_website/index.html"
-              >Nerdland Farm Homepage</a
-            >
+            <div class="project">
+              <a class="button" href="./ca_cosy_tea_flexbox/cosy_tea_index.html"
+                >Cozy Tea</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  Working from a Codecademy brief mock up to implement flexbox
+                  for the first time. Click the name to view the project.
+                </p>
+              </details>
+            </div>
+            <br /><br />
+            <div class="project">
+              <a
+                class="button"
+                href="./ca_design_stylesheet/website_stylesheet.html"
+                >Website Stylesheet</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  I went a little more indepth for this than strictly necessary,
+                  but its served me well as the basis for this site. Click the
+                  name to view the project.
+                </p>
+              </details>
+            </div>
+            <br /><br />
+            <div class="project">
+              <a class="button" href="./ca_fotomatic_debug/index.html"
+                >Fotomatic Debug</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  Rather than generating the code myself, this has been an
+                  interestign exercise in debugging someone else's work. I've
+                  managed to get the desktop site looking decent, but mobile has
+                  much to be desired. In hindsight, I wish I'd done mobile
+                  first! Click the name to view the project.
+                </p>
+              </details>
+            </div>
+            <br /><br />
+            <div class="project">
+              <a class="button" href="./ca_company_website/index.html"
+                >Nerdland Farm Homepage</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  A free practice project, built mobile first and in homage to
+                  my Stardew Valley farm for a bit of fun! Click the name to
+                  view the project.
+                </p>
+              </details>
+            </div>
           </div>
-        </section>
+        </article>
 
         <br />
         <br />
 
-        <section id="week3">
-          <h3>Week 3</h3>
+        <article class="container" id="week3">
+          <h3 class="week-title">Week 3</h3>
           <div class="inline_blocks">
-            <a
-              class="button external_link"
-              href="https://github.com/Jo-Pickering/technative_codecademy/tree/main/ca_javascript_week_3"
-              >The start of JavaScript!</a
-            >
+            <div class="project">
+              <a
+                class="button external_link"
+                href="https://github.com/Jo-Pickering/technative_codecademy/tree/main/ca_javascript_week_3"
+                >The start of JavaScript!</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  I'd never seen JavaScript before this week and this was a
+                  couple of the bigger end of module projects on Codecademy. Its
+                  not the best code, but I think its useful to demostrate my
+                  progress over the weeks. Click the name to view the project.
+                </p>
+              </details>
+            </div>
           </div>
-        </section>
+        </article>
 
         <br /><br />
 
-        <section id="week4">
-          <h3>Week 4</h3>
+        <article class="container" id="week4">
+          <h3 class="week-title">Week 4</h3>
           <div class="inline_blocks">
-            <a class="button" href="./tn_playing_with_javascript/filter.html"
-              >Learning to add data, search and filter with JS</a
-            >
+            <div class="project">
+              <a class="button" href="./tn_playing_with_javascript/filter.html"
+                >Data, search and Filter</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  This was a project set by TechNative that was part follow the
+                  instructions and part freer practice. I really enjoyed setting
+                  to see JS in practice on the web and it helped inspire some
+                  features on this site. Click the name to view the project.
+                </p>
+              </details>
+            </div>
+            <br /><br />
+            <div class="project">
+              <a
+                class="button"
+                href="https://jo-pickering.github.io/git-practice/"
+                >Git/GitHub Workflow</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  This was a very quick additional project with Chloe, Elyas and
+                  Helder to practice using Git and GitHub. It's based on the
+                  Codecademy 'Mixed Messages' project. It was the first time
+                  we'd made branches, pull requests and merged work! Click the
+                  name to view the project.
+                </p>
+              </details>
+            </div>
           </div>
-          <div class="inline_blocks">
-            <a
-              class="button"
-              href="https://jo-pickering.github.io/git-practice/"
-              >A practice doing Git Workflow with Elyas, Chloe and Helder.</a
-            >
-          </div>
-        </section>
+        </article>
 
         <br /><br />
 
-        <section id="week5">
-          <h3>Week 5</h3>
+        <article class="container" id="week5">
+          <h3 class="week-title">Week 5</h3>
           <div class="inline_blocks">
-            <a class="button" href="./tn_api_practice/api_practice.html"
-              >Adding a basic API</a
-            >
+            <div class="project">
+              <a class="button" href="./tn_api_practice/api_practice.html"
+                >API's</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  I'd have loved a bit more time to play with this, but I was so
+                  proud to have gotten this much working after a few blocks with
+                  the original learning content. Click the name to view the
+                  project.
+                </p>
+              </details>
+            </div>
+            <br /><br />
+            <div class="project">
+              <a class="button" href="./tn_api_practice/api_practice.html"
+                >Milliways (Group Project)</a
+              >
+              <br /><br />
+              <details>
+                <summary>Project description</summary>
+                <p>
+                  This was our first group project, set by TechNative and the
+                  attached employers. We had a design brief to work from but
+                  were free to create a site on whatever we wanted. It was a
+                  tough 4 days, but I'm really proud of what we've put together.
+                  Click the name to view the project.
+                </p>
+              </details>
+            </div>
           </div>
-        </section>
+        </article>
+      </section>
+      <br /><br />
 
-        <br /><br />
-      </main>
-    </div>
+      <section class="container">
+        <h3>Collaborators</h3>
+        <br />
+        <p>
+          Check out some of the wonderful human's I've been blessed to work with
+          and learn from during my time on the bootcamp:
+        </p>
+        <br />
+        <div class="inline_blocks">
+          <a class="button person" href="https://github.com/ChloeSAPage"
+            >Chloe Page</a
+          >
+          <a class="button person" href="https://github.com/BlueElyas"
+            >Elyas Faiq</a
+          >
+          <a class="button person" href="https://github.com/HelderBalbino"
+            >Helder Balbino</a
+          >
+          <!--<a class="button person" href="https://github.com/hedgehog125"
+            >Nico Clack</a
+          >-->
+        </div>
+      </section>
+      <br /><br />
+    </main>
+
     <footer>
-      <p>Hello there. The Kenobi from my nightmares...</p>
+      <p class="foot">Hello there. The Kenobi from my nightmares...</p>
     </footer>
   </body>
 </html>
