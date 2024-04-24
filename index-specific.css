@@ -1,0 +1,94 @@
+/*Page Layout CSS*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-navigation {
+  background-color: #76b39d;
+  border-radius: 20px;
+  text-align: centre;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 8rem;
+}
+
+.page-navigation ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.page-navigation li {
+  width: 25%;
+  line-height: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 2px #702283 solid;
+  border-radius: 1rem;
+  background-color: white;
+  text-align: center;
+  max-width: 100%;
+}
+
+/*Text formatting classes*/
+.page-navigation p {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.week-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  color: purple;
+}
+details > p {
+  font-size: 0.75rem;
+  font-family: "Kode Mono", monospace;
+}
+
+/*Project block formatting*/
+.inline_blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Media*/
+
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/*Responsive Site Please*/
+@media only screen and (min-width: 700px) {
+  .inline_blocks {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 40%;
+    margin: 1rem 0;
+  }
+}
+
+/*JavaScript Classes*/
+.hide {
+  display: none;
+}
+
+h4:hover {
+  cursor: pointer;
+}

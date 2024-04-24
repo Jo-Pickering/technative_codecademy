@@ -6,37 +6,37 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  text-align: center;
   min-height: 100%;
-}
-
-@media only screen and (max-width: 300px) {
-  html {
-    font-size: 16px;
-  }
+  max-width: 100%;
 }
 
 body {
-  display: grid;
   background-color: #70228350;
-}
-
-footer {
-  grid-column: 1 / -1;
+  max-width: 100%;
+  text-align: center;
 }
 
 header {
   background-color: #962071;
   display: grid;
   grid-template-rows: auto, auto;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+  text-align: center;
 }
 
 nav ul {
-  font-family: "Handlee";
-  font-size: 1.5rem;
+  font-family: "Handlee", cursive;
+  font-size: 1rem;
   display: inline-grid;
+}
+
+.site-nav ul {
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -44,87 +44,39 @@ nav li {
   list-style: none;
 }
 
-.page {
-  display: grid;
-  min-height: 0%;
-  grid-template-rows: 1fr auto;
-  grid-template-columns: 1fr 7fr;
-  gap: 15px;
-}
 
-main {
-  margin-right: 1rem;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar {
-  height: auto;
-  background-color: #76b39d;
-  border-radius: 20px;
-  grid-column: 1 / 2;
-  margin-left: 1rem;
-  margin-top: 3rem;
-  text-align: centre;
-  padding: 20px;
-}
 
 footer {
-  font-family: "Handlee";
-  font-style: italic;
-  font-size: smaller;
-  color: white;
   background-color: #702283;
-  padding: 5px;
+  position: relative;
+  top: 8rem;
+  width: 100%;
 }
 
-/*Main Element Flexboxes*/
+/*Main Element Positioning ~~ Format Flex and main content elements on it's own page's file!*/
 
-section {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border: 2px #702283 solid;
-  border-radius: 15px;
-  background-color: white;
-}
-
-.inline_blocks {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-}
-
-.group {
-  flex-basis: 50%;
-  padding-bottom: 2rem;
+main {
+  position: relative;
+  top: 8rem;
+  margin: 0 1rem;
 }
 
 /*Website Text Styling Conventions*/
 
 h1 {
-  font-family: "Handlee";
-  font-size: 4rem;
-  padding-bottom: 1rem;
+  font-family: "Handlee", cursive;
+  font-size: 3rem;
 }
 
-h2 {
-  font-size: 3.5rem;
+.website-section-title {
+  font-size: 2.5rem;
   font-weight: bolder;
   color: #962071;
   padding-bottom: 1rem;
 }
 
-h3 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding-bottom: 1rem;
-}
-
-h4 {
-  font-size: 2rem;
+.page-title {
+  font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -134,33 +86,47 @@ h5 {
   font-weight: bold;
   padding-bottom: 1rem;
 }
-
+/* Not currently being used, but being held in case!
 h6 {
   font-size: 1rem;
   font-weight: bold;
   padding-bottom: 1rem;
-}
+}*/
 
 p {
-  padding-bottom: 1rem;
+  line-height: 2rem;
+  text-align: left;
 }
 
-aside {
-  font-family: "Shadows into Light Two";
+.body-list {
+  text-align: left;
+  margin: 0 1rem;
+}
+
+.body-list li {
+  line-height: 2rem;
+}
+
+.sub-list {
+  margin-left: 1.5rem;
+}
+
+/*aside {
+  font-family: "Shadows into Light Two", cursive;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #962071;
   background-color: #fdb44b;
   border-radius: 20px;
-}
+}*/
 
 figcaption {
-  font-family: "Kode Mono";
-  font-size: 1rem;
+  font-family: "Kode Mono", monospace;
+  font-size: 0.75rem;
 }
 
 .code {
-  font-family: "Kode Mono";
+  font-family: "Kode Mono", monospace;
   font-size: 1.25rem;
   text-transform: lowercase;
   background-color: #76b39d60;
@@ -170,6 +136,19 @@ figcaption {
   font-weight: bolder;
 }
 
+.intro {
+  text-align: center;
+  font-weight: 500;
+}
+
+.foot {
+  font-family: "Handlee", cursive;
+  font-style: italic;
+  font-size: smaller;
+  color: white;
+  text-align: center;
+}
+
 /*Website User Navigation Conventions (links and buttons)*/
 
 .internal_link {
@@ -177,11 +156,15 @@ figcaption {
 }
 
 .internal_link:visited {
+  color: purple;
+}
+
+.site-nav .internal_link:visited {
   color: #76b39d;
 }
 
 .internal_link:hover {
-  background-color: #fdb44b;
+  background-color: #fdb44b80;
   border-radius: 5px;
   padding: 0.5rem;
 }
@@ -214,10 +197,10 @@ figcaption {
   background-color: #fdb44b;
   color: black;
   height: auto;
+  width: auto;
   padding: 0.5rem;
   border-radius: 5px;
   text-decoration: underline;
-  margin: 1rem 0;
 }
 
 .button:visited {
@@ -237,25 +220,60 @@ figcaption {
   font-weight: bold;
 }
 
+/*Media*/
+
+img {
+  max-height: auto;
+  max-width: 90%;
+}
+
+/*Style override classes*/
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.handlee {
+  font-family: "Handlee", cursive;
+}
+
+.shadows {
+  font-family: "Shadows into Light Two", cursive;
+}
+
+.kode {
+  font-family: "Kode Mono", monospace;
+}
+
+.mauve {
+  color: #702283;
+}
+
+.purple {
+  color: #962071;
+}
+
+.green {
+  color: #76b39d;
+}
+
+.yellow {
+  color: #fdb44b;
+}
+
 /*Responsive Site Please*/
-@media only screen and (max-width: 450px) {
-  h1 {
-    font-size: 3rem;
+
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 18px;
   }
-  nav {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1rem;
-  }
-  .sidebar {
-    font-size: 0.75rem;
-    margin: 0.5rem;
-  }
-  .page {
-    gap: 0;
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
   }
 }
