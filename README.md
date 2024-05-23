@@ -13,6 +13,11 @@ Feel free to browse through my code to see how my skills and understanding has d
 Where interfaces exist, these have been deployed to GitHub Pages and are linked together by the index file.
 
 ## Topics Covered
+The codebase in this repo mainly covers:
 + html
 + css
 + javascript
+
+However, the index file also links out to projects in other repos that cover:
++ React
++ Redux
