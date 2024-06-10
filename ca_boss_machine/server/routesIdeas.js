@@ -11,6 +11,16 @@ const {
 
 const checkMillionDollarIdea = require("./checkMillionDollarIdea");
 
+ideasRouter.param("ideaId", (req, res, next, id) => {
+  const idea = getFromDatabaseById("ideas", id);
+  if (idea) {
+    req.idea = idea;
+    next();
+  } else {
+    res.status(404).send();
+  }
+});
+
 //Returns an array of ideas
 ideasRouter.get("/", (req, res) => {
   const ideas = getAllFromDatabase("ideas");
@@ -44,6 +54,7 @@ ideasRouter.get("/:ideaId", (req, res) => {
 //Updates an idea by it's id
 ideasRouter.put("/:ideaId", checkMillionDollarIdea, (req, res) => {
   const getIdea = getFromDatabaseById("ideas", req.params.ideaId);
+  console.log("getIdea", getIdea);
   if (getIdea) {
     const updateIdea = updateInstanceInDatabase("ideas", req.body);
     res.status(200).send(updateIdea);
